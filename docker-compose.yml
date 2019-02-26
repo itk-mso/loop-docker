@@ -38,6 +38,84 @@ services:
     labels:
       - "traefik.frontend.rule=Host:${COMPOSE_PROJECT_NAME}.docker.localhost"
 
+  nginx_administrativtloop:
+    image: nginx:latest
+    depends_on:
+      - phpfpm
+      - memcached
+    # ports:
+    #   - '80'
+    volumes:
+      - ${PWD}/.docker/vhost.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./:/app:delegated
+    labels:
+      - "traefik.frontend.rule=Host:administrativtloop.docker.localhost"
+
+  nginx_akutteamloop:
+    image: nginx:latest
+    depends_on:
+      - phpfpm
+      - memcached
+    # ports:
+    #   - '80'
+    volumes:
+      - ${PWD}/.docker/vhost.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./:/app:delegated
+    labels:
+      - "traefik.frontend.rule=Host:akutteamloop.docker.localhost"
+
+  nginx_elearningloop:
+    image: nginx:latest
+    depends_on:
+      - phpfpm
+      - memcached
+    # ports:
+    #   - '80'
+    volumes:
+      - ${PWD}/.docker/vhost.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./:/app:delegated
+    labels:
+      - "traefik.frontend.rule=Host:elearningloop.docker.localhost"
+
+  nginx_emnemodulloop:
+    image: nginx:latest
+    depends_on:
+      - phpfpm
+      - memcached
+    # ports:
+    #   - '80'
+    volumes:
+      - ${PWD}/.docker/vhost.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./:/app:delegated
+    labels:
+      - "traefik.frontend.rule=Host:emnemodulloop.docker.localhost"
+
+  nginx_loop:
+    image: nginx:latest
+    depends_on:
+      - phpfpm
+      - memcached
+    # ports:
+    #   - '80'
+    volumes:
+      - ${PWD}/.docker/vhost.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./:/app:delegated
+    labels:
+      - "traefik.frontend.rule=Host:loop.docker.localhost"
+
+  nginx_risikataloop:
+    image: nginx:latest
+    depends_on:
+      - phpfpm
+      - memcached
+    # ports:
+    #   - '80'
+    volumes:
+      - ${PWD}/.docker/vhost.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./:/app:delegated
+    labels:
+      - "traefik.frontend.rule=Host:loop.docker.localhost"
+
   memcached:
     image: 'memcached:latest'
     ports:
