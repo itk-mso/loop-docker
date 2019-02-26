@@ -1,1 +1,2 @@
-# loop-docker
+# Docker setup for loop
+
