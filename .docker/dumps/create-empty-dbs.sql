@@ -1,0 +1,12 @@
+create database administrativtloop;
+create database akutteamloop;
+create database elearningloop;
+create database emnemodulloop;
+create database msoloop;
+create database risikataloop;
+grant all privileges on administrativtloop.* to 'db'@'%' WITH GRANT OPTION;
+grant all privileges on akutteamloop.* to 'db'@'%' WITH GRANT OPTION;
+grant all privileges on elearningloop.* to 'db'@'%' WITH GRANT OPTION;
+grant all privileges on emnemodulloop.* to 'db'@'%' WITH GRANT OPTION;
+grant all privileges on msoloop.* to 'db'@'%' WITH GRANT OPTION;
+grant all privileges on risikataloop.* to 'db'@'%' WITH GRANT OPTION;
