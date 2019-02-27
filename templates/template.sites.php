@@ -54,8 +54,8 @@
  * @see http://drupal.org/documentation/install/multi-site
  */
 $sites['administrativtloop.docker.localhost'] = 'administrativtloop.sundhedogomsorg.dk';
-$sites['akutteamloo.docker.localhost'] = 'akutteamloop.sundhedogomsorg.dk';
-$sites['elearningloop.docker.localhost'] = 'elearningloop.aarhuskommune.dk';
-$sites['emnemodul.docker.localhost'] = 'emnemodul.sundhedogomsorg.dk';
-$sites['msoloop.docker.localhost'] = 'loop.sundhedogomsorg.dk';
+$sites['akutteamloop.docker.localhost'] = 'akutteamloop.sundhedogomsorg.dk';
+$sites['elearningloop.docker.localhost'] = 'elearningloop.sundhedogomsorg.dk';
+$sites['emnemodulloop.docker.localhost'] = 'emnemodulloop.sundhedogomsorg.dk';
+$sites['msoloop.docker.localhost'] = 'msoloop.sundhedogomsorg.dk';
 $sites['risikataloop.docker.localhost'] = 'risikataloop.sundhedogomsorg.dk';
