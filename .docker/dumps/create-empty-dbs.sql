@@ -1,9 +1,9 @@
-create database administrativtloop;
-create database akutteamloop;
-create database elearningloop;
-create database emnemodulloop;
-create database msoloop;
-create database risikataloop;
+create database administrativtloop CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+create database akutteamloop CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+create database elearningloop CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+create database emnemodulloop CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+create database msoloop CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+create database risikataloop CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 grant all privileges on administrativtloop.* to 'db'@'%' WITH GRANT OPTION;
 grant all privileges on akutteamloop.* to 'db'@'%' WITH GRANT OPTION;
 grant all privileges on elearningloop.* to 'db'@'%' WITH GRANT OPTION;
